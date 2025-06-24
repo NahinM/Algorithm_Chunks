@@ -6,6 +6,7 @@ using namespace std;
 #define vb vector<bool>
 
 void insertion_sort(vi &arr){
+    if(arr.size()<=1) return;
     for(int i=1; i<arr.size(); i++)
         for(int j=i; j>0 && arr[j-1]>arr[j]; j--) swap(arr[j-1],arr[j]);
 }
