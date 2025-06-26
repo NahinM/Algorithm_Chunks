@@ -10,7 +10,7 @@ def count_sort(arr):
 
     N = mx-mn+1 # find the length of the 'counting range from MIN to MAX'
     count = [0]*N
-    for x in arr: count[x-mn]+=1 # count the frequency of the occurence
+    for x in arr: count[x-mn]+=1 # count the frequency of the occurrence
     for i in range(1,N): count[i]+=count[i-1] # get the coumulative sum
 
     sorted_arr = [0]*n

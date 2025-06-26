@@ -10,7 +10,7 @@ def count_sort(arr):
     N = mx-mn+1 # find the length of the counting range.
     count = [0]*N # initialize a array with zeros
     for x in arr:
-        count[x-mn]+=1 # count the frequency of the occurence of the numbers.
+        count[x-mn]+=1 # count the frequency of the occurrence of the numbers.
 
     # the following codes from the two sections bellow are equivalent.
     at = 0
