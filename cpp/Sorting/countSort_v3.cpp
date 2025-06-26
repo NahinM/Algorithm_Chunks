@@ -17,7 +17,7 @@ vi count_sort(vi &arr){
     int N = MAX-MIN+1; // find the length of the 'counting range from MIN to MAX'
     vi count(N);
     for(int x:arr) ++count[x-MIN]; // count the frequency of the occurence
-    for(int i=1;i<N;i++) count[i]+=count[i-1]; // get the coumilitive sum
+    for(int i=1;i<N;i++) count[i]+=count[i-1]; // get the coumulative sum
     vi sorted_arr(n); 
     for(int x:arr){
         int ndx = --count[x-MIN]; // find the position of the x where it should be placed
