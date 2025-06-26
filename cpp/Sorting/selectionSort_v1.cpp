@@ -25,7 +25,11 @@ vi selection_sort(vi &unsorted_arr){
 }
 
 int main(){
-    vi unsorted_arr = {1,4,3,2};
+    freopen("input.txt","r",stdin);
+    int n;
+    cin >> n;
+    vi unsorted_arr(n);
+    for(int i=0;i<n;i++) cin >> unsorted_arr[i];
     vi sorted_arr = selection_sort(unsorted_arr);
     for(int i:sorted_arr) cout << i << ' ';
     cout << '\n';

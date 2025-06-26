@@ -12,7 +12,11 @@ void insertion_sort(vi &arr){
 }
 
 int main(){
-    vi arr = {1,6,5,4,3,2};
+    freopen("input.txt","r",stdin);
+    int n{1};
+    cin >> n;
+    vi arr(n);
+    for(int i=0;i<n;i++) cin >> arr[i];
     insertion_sort(arr);
     for(int i:arr) cout << i << ' ';
     cout << '\n';
