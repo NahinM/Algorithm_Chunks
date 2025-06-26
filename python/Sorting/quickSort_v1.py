@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("input.txt","r")
 
-def quick_sort(arr):
+def quick_sort(arr:list[int]):
     n = len(arr)
     if n<=1: return
 

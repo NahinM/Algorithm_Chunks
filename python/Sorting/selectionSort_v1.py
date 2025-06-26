@@ -1,5 +1,5 @@
 
-def selection_sort(unsorted_arr):
+def selection_sort(unsorted_arr:list[int]):
     n = len(unsorted_arr)
     if n<=1: return unsorted_arr
 

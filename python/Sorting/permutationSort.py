@@ -1,12 +1,12 @@
 
-def is_sorted(arr):
+def is_sorted(arr:list[int]):
     if len(arr)<=1: return True
     for i in range(1,len(arr)):
         if arr[i-1]>arr[i]: return False
     return True
 
 found = False
-def permutation(unsorted_arr,sorted_arr,vst,n,at=0):
+def permutation(unsorted_arr:list[int], sorted_arr:list[int], vst:list[bool], n:int, at:int=0):
     global found
     if at==n:
         # for i in sorted_arr: print(i,end=" ")
@@ -23,7 +23,7 @@ def permutation(unsorted_arr,sorted_arr,vst,n,at=0):
         permutation(unsorted_arr,sorted_arr,vst,n,at+1)
         vst[i] = False
 
-def permutation_sort(unsorted_arr):
+def permutation_sort(unsorted_arr:list[int]):
     global found
     n = len(unsorted_arr)
     sorted_arr = [0]*n

@@ -1,12 +1,12 @@
 
-def insert_into(sorted_arr, at, x):
+def insert_into(sorted_arr:list[int], at:int, x:int):
     sorted_arr[at] = x
     while at>0 and sorted_arr[at-1]>sorted_arr[at]:
         sorted_arr[at-1],sorted_arr[at] = sorted_arr[at],sorted_arr[at-1]
         at-=1
 
 
-def insertion_sort(unsorted_arr):
+def insertion_sort(unsorted_arr:list[int]):
     n = len(unsorted_arr)
     if n<=1: return unsorted_arr
     
