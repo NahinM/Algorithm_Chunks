@@ -5,6 +5,7 @@ using namespace std;
 #define vi vector<int>
 
 vi count_and_sort(vi &arr){
+    if(arr.size()<=1) return arr;
     int mn,mx; mn = mx = arr[0];
     vi sorted_arr;
     for(int x: arr) { // find the minimum and maximum element of the array
