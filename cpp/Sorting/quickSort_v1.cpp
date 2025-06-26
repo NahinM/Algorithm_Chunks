@@ -26,7 +26,11 @@ void quick_sort(vi &arr){
 }
 
 int main(){
-    vi arr = {2,4,6,8,7,3,9,1,5,4,9,2,4,0,1,3,5};
+    freopen("input.txt","r",stdin);
+    int n;
+    cin >> n;
+    vi arr(n);
+    for(int i=0;i<n;i++) cin >> arr[i];
     quick_sort(arr);
     for(int x: arr) cout << x << ' ';
     cout << '\n';
